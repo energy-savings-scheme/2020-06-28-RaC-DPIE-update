@@ -16,10 +16,160 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Rules as Code</h1>
+					<h3>Where we're at - June 2020</h3>
+					<p><small>Liam McCann</small></p>
+					<p><span style="position: left; font-size:0.4em"><a href="https://energy-savings-scheme.github.io/2020-05-05-EM-preso" target="_blank">https://energy-savings-scheme.github.io/2020-05-05-EM-preso</a></span></p>
+					<p>
+				</section>
+				<section>
+					<h1>Contents</h1>
+					<li>An introduction to what Rules as Code is</li>
+					<li>An introduction to what Rules as Code is</li>
+				</section>
+				<section>
+					<section>
+						<h2>What is Rules as Code?</h2>
+						<p>In short - it's translating <em>prescriptive</em> rules into machine-readable computer code</p>
+						<p><span style="position: left; font-size:0.4em">Perspective rules are those which can provide definitive answers to questions - for example, yes/no questions, calculations, logic, etc.</span></p>
+					</section>
+					<section>
+					<h3>Do you need Rules as Code?<br></h3>
+					<img width="40%" alt="Down arrow" data-lazy-loaded="" data-src="img/policy_lab_need_rac.png"><br>
+					<p><span style="position: left; font-size:0.3em">Sourced from: <a href="https://www.digital.nsw.gov.au/digital-transformation/policy-lab/rules-code" target="_blank">https://www.digital.nsw.gov.au/digital-transformation/policy-lab/rules-code</a></span></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Why code rules?</h2>
+						<p>Rules are often complicated, difficult to understand, and create barriers to accessing services or programs which the rules are designed for.</p>
+					</section>
+					<section>
+						<p>An example of a complex ruleset in practice.</p>
+						 <img width="40%" alt="Down arrow" data-lazy-loaded="" data-src="img/parking.jpg">
+					</section>
+					<section>
+						<p>And in many cases, become increasingly complex over time.</p>
+						 <img width="100%" alt="Down arrow" data-lazy-loaded="" data-src="img/ess_rule_length.png">
+					<p><span style="position: left; font-size:0.4em">The length in pages of the ESS Rule over time, from 2009 to 2020.</span></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>The promise of Rules as Code is...</h2>
+
+						<ul>
+							<li>Help people understand the rules</li>
+							<li>Enable further digital solutions</li>
+							<li>Make compliance easier</li>
+							<li>For the ESS, create further energy savings</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Rules as Code is already happening</h2>
+						<ul>
+							<li>Department of Customer Service - Community Gaming, Better Regulation Division and more...</li>
+							<li>New Zealand - Social Security Entitlements</li>
+							<li>France - social benefits, tax reforms</li>
+							<li>Even eTax is a form of Rules as Code (through coded tax regulations in an app)</li>
+						</ul>
+					</section>
+					<section data-background-iframe="https://smartstart.services.govt.nz/financial-help" data-background-interactive="" data-id="50a8ecbe06e603bb19fd8721fe415237">
+							<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>What does it look like - in practice?</h2>
+							<p>This is a questionaire that can be used to determine what financial help you're eligible for in New Zealand, created using Rules As Code</p>
+							</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>The value for the ESS is...</h3>
+						<p><span>We can use Rules as Code to inform implementation of the Rule.</span></p>
+					</section>
+					<section>
+						<h3>What we've done so far is...</h3>
+						<p span style="font-size:0.7em">Worked with DCS to learn how to build a Rules as Code coding environment.</p>
+						<p span style="font-size:0.7em">Coded the NABERS method of the Rule (for Offices and Apartments).</p>
+						<p span style="font-size:0.7em">Built test cases for the use of this method.</p>
+						<p span style="font-size:0.7em">Reviewed the code with Legal.</p>						
+						<p span style="font-size:0.7em">Started the process of building a proof of concept webform.</p>			
+						<p span style="font-size:0.7em">Started planning the next sections of the ESS to code.</p>			
+					</section>
+					<section>
+						<h3>A simple example of the value of our current work.</h3>
+						<p span style="font-size:0.7em">There's a term "Counted Energy Savings" in the NABERS method of the ESS.</p>
+						<p span style="font-size:0.7em">It appears twice - and it's defined slightly differently both times it appears.</p>
+					</section>
+					<section>
+					<p> The difference in meanings is summarised below.<p>
+					<img width="80%" alt="Down arrow" data-lazy-loaded="" data-src="img/counted_energy_ savings_definitions.jpg">
+					</section>
+					<section>
+					<p>Strictly following the existing definitions of Counted Energy Savings within the Rule, it would be impossible to calculate ESCs within NABERS because of this ambiguity - the machine would be unsure of what definition to use.<p>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h3>Benefits beyond making the code publicly available:</h3>
+					<p><span>Establish hierarchy, structure and connections between terms used throughout the Rule</span></p>
+					<p><span><em>to ensure consistency</em> in the meaning of these terms</span></p>
+					</section>
+					<section>
+					<h3>Benefits beyond making the code publicly available:</h3>
+					<p><span>Testing the interpretation of the rules with non-subject matter experts</span></p>
+					<p><span><em>to ensure clarity</em> of interpretation across the different stakeholder groups</span></p>
+					</section>
+					<section>
+					<h3>Benefits beyond making the code publicly available:</h3>
+					<p><span>Test coding the written rules into machine-readable language</span></p>
+					<p><span><em>to remove ambiguity</em> for when users do the same</span></p>
+					</section>
+					<section>
+					<h2>We've found that coding the rules is the easy part.</h2>
+					<p><span>But it’s only part of developing Better Rules.</span></p>
+					</section>
+					<section>
+					<h3>Better Rules</h3>
+					<p>The Better Rules framework provides a template for how we can do rule changes</p>
+					<p><em>and</em></p>
+					<p>Coding the rules will transform how the rules operate and are implemented.</p>
+					</section>
+					<section>
+					<h3>The current rule change process is very linear.</h3>
+					<p>Here's a simplified version of the current process.</p>
+						<img width="100%" alt="Down arrow" data-lazy-loaded="" data-src="img/current_rule_change_process.jpg">
+					</section>
+					<section>
+						<img width="85%" alt="Down arrow" data-lazy-loaded="" data-src="img/current_state_rules.png">
+					<p><span style="position: left; font-size:0.3em"><a href="https://www.digital.govt.nz/dmsdocument/95-better-rules-for-government-discovery-report/html" target="_blank">https://www.digital.govt.nz/dmsdocument/95-better-rules-for-government-discovery-report/html</a></span></p>
+					<p><span style="position: left; font-size:0.3em"><a href="https://trends.oecd-opsi.org/embracing-innovation-in-government-global-trends-2019.pdf" target="_blank">https://trends.oecd-opsi.org/embracing-innovation-in-government-global-trends-2019.pdf</a></span></p>
+					</section>
+					<section>
+						<img width="85%" alt="Down arrow" data-lazy-loaded="" data-src="img/future_state_rules.png">
+					<p><span style="position: left; font-size:0.3em"><a href="https://trends.oecd-opsi.org/embracing-innovation-in-government-global-trends-2019.pdf" target="_blank">https://trends.oecd-opsi.org/embracing-innovation-in-government-global-trends-2019.pdf</a></span></p>					
+					</section>
+					<section>
+					<h3>The end goal is to use an integrated Better Rules approach to build a better end product.</h3>
+						<img width="85%" alt="Down arrow" data-lazy-loaded="" data-src="img/better_rules_process.jpg">
+					</section>
+					<section>
+					<h3>The key is integrating the perspectives and knowledge of <strong><em>different</em></strong> experts to ensure the rules deliver the best outcome for the user, following rule implementation.</h3>
+					</section>
+				</section>
+				<section>
+				<h3>What's next?<h3>
+				<p span style="font-size:0.7em">Testing this prototype with NABERS stakeholders</p>
+				<p span style="font-size:0.7em">Begin scaling this approach throughout the rest of the current ESS Rule</p>
+				<p span style="font-size:0.7em">Integrate the Better Rules approach into Safeguard development and delivery</p>
+				</section>
+				<section>
+				<h3>Thank you!<h3>
+				<p span style="font-size:0.7em">Happy to take any questions you may have!</p>
+				</section>
+
+				</div>
 			</div>
-		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
